@@ -110,3 +110,15 @@ nav a {
         margin-right: 10px;
     }
 }
+
+
+.card-text,
+.card-title {
+    color: #333;
+    /* Dark gray color */
+}
+
+
+.card {
+    margin-bottom: 30px;
+}
