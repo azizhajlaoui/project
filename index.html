@@ -6,37 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/style.css" rel="stylesheet" />
     <title>Accueil</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Style for the scroll to top button */
+       
+    </style>
+
 </head>
 
 <body>
+    <!-- Main content section -->
+    <div class="content">
+        <!-- Navbar -->
+        <header>
+            <nav class="d-flex justify-content-between align-items-center p-3">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="Logo" >
+                </a>
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="a-propos.html">À propos</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About Us</a>
+                </div>
+            </nav>
+        </header>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <img src="images/logo.jpg" alt="Logo" width="5%" height="5%">
-            <div>
-                <a href="index.html">Accueil</a>
-                <a href="a-propos.html">À propos</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About Us</a>
+        <!-- Main Section -->
+        <div class="main-section">
+            <h1 class="display-4">Bienvenue Au Association de Promotion de la Santé Mentale</h1>
+            <p class="lead">Rejoignez notre communauté pour faire la différence.</p>
+            <a href="#about" class="btn btn-primary">En savoir plus</a>
+        </div>
+
+        <!-- President's Message Section -->
+        <div class="president-message">
+            <div class="message-text">
+                <h4>Le mot du président</h4>
+                <p>Chères amies, chers amis,</p>
+                <p>Permettez-moi, en ce début d'année 2024, de vous présenter en mon nom et au nom de l'ensemble du
+                    bureau
+                    et du conseil d'administration de l'ANP3SM, tous nos voeux de santé, de joie et de sérénité...</p>
+                <p>J'ai donc hâte de vous retrouver pour notre 22<sup>ème</sup> édition, d'ici là portez-vous bien et
+                    prenez
+                    soin de vous et de vos proches.</p>
+                <p style="color: #767171;"><strong>Docteur Nabil HALLOUCHE, Président de l'ANP3SM</strong></p>
             </div>
-        </nav>
-    </header>
+            <a href="https://www.anp3sm.com/wp-content/uploads/2014/06/nabil-300x300-2.jpg">
+                <img src="https://www.anp3sm.com/wp-content/uploads/2014/06/nabil-300x300-2-150x150.jpg" alt="nabil"
+                    class="img-fluid">
+            </a>
+        </div>
 
-    <!-- Main Section -->
-    <div class="container text-center">
-        <h1 class="display-4">Bienvenue Au Association de Promotion de la Santé Mentale</h1>
-        <img src="/images/paysage1.jpg" class="img-fluid" alt="Image de couverture">
-        <p class="lead">Rejoignez notre communauté pour faire la différence.</p>
-        <a href="#about" class="btn btn-primary">En savoir plus</a>
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" class="rounded-circle" title="Retour en haut">&#8679;</button>
     </div>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Footer -->
     <footer>
         <img src="images/logo.jpg" alt="Logo " width="5%" height="5%">
         <div>
@@ -48,6 +76,30 @@
             </a>
         </div>
     </footer>
+
+    <!-- Scroll to Top JavaScript -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
 </body>
+
 
 </html>
