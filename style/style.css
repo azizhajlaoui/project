@@ -60,21 +60,30 @@ nav a:hover {
 #scrollToTopBtn {
     position: fixed;
     bottom: 70px;
-    /* Position it above the footer */
+    /* Position it just above the footer */
     right: 20px;
-    background-color: #007bff;
-    color: white;
+    width: 50px;
+    /* Size of the button */
+    height: 50px;
+    /* Size of the button */
+    background-image: url('/images/arrow-up_18221381.png');
+    /* Use your image path here */
+    background-size: cover;
+    /* Make sure the image covers the whole button */
+    background-position: center;
+    /* Center the image within the button */
     border: none;
     border-radius: 50%;
-    padding: 15px;
-    font-size: 18px;
-    display: none;
+    /* Make the button round */
     cursor: pointer;
+    display: none;
     z-index: 100;
+    /* Ensure it stays on top of other content */
 }
 
+/* Optional: Add a hover effect */
 #scrollToTopBtn:hover {
-    background-color: #0056b3;
+    opacity: 0.8;
 }
 
 /* Navbar Styling */
